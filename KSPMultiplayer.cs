@@ -28,6 +28,10 @@ namespace SC {
 			}
 		}
 
+		void OnPlayerConnected(NetworkPlayer player) {
+			Debug.Log ("Player connected from " + player.ipAddress + ":" + player.port);
+		}
+
 		// Private methods
 		protected Rect windowPos;
 		private void drawGUI() {
